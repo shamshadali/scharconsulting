@@ -75,7 +75,7 @@
                     <p>Contact us today to learn more about how we can help you achieve your business goals.</p>
                 </div>
                 <div class="col-span-1">
-                    <a href="/contact"><input type="button" name="Contact Us" value ="Contact Us Now" style="background-color:#35424a; color:#ffffff;"/></a>
+                    <a href="/contact.php"><input type="button" name="Contact Us" value ="Contact Us Now" style="background-color:#35424a; color:#ffffff;"/></a>
                 </div>
             </div>
         </div>
