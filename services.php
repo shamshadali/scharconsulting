@@ -32,53 +32,16 @@
             color: black;
             padding: 1rem;
         }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .nav-links li {
-            margin-left: 20px;
-        }
-        .nav-links a {
-            color: black;
-            text-decoration: none;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background-color: white;
-            margin: 2px 0;
-        }
         .header-image {
             width: 100%;
-            height: 300px;
+            height: 500px;
             background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
         }
-        .header-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+
         .center-content {
             padding: 2rem;
             max-width: 800px;
@@ -88,10 +51,6 @@
         }
         h1 {
             color: #35424a;
-        }
-        form {
-            display: grid;
-            gap: 1rem;
         }
         label {
             font-weight: bold;
@@ -105,31 +64,13 @@
             margin-top: 2rem;
         }
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                background-color: #35424a;
-                padding: 1rem;
-            }
-            .nav-links.show {
-                display: flex;
-            }
-            .nav-links li {
-                margin: 0.5rem 0;
-            }
-            .hamburger {
-                display: flex;
-            }
             .header-image {
                 height: 200px;
             }
             main {
                 padding: 1rem;
             }
+
     }
 
     .circle-container {
@@ -163,12 +104,9 @@
 </head>
 <body>
   <?php include 'header.php' ?>
-<!--  <div class="header-image" style="position: relative;">-->
-<!--      <img src="home.jpg">-->
-<!--      <div class="row py-4" style="position: absolute; top: 40%; left: 5%; color: white; padding: 20px; font-size:35px; font-weight:bold;">-->
-<!--          Unlock growth potential with innovative technology solutions-->
-<!--      </div>-->
-<!--  </div>-->
+    <div>
+        <img src="/assets/images/technology.png" style= "width:100%;"/>
+    </div>
 
 <section style="display: flex; padding-left:40px;">
     <div class="py-6 col-span-2" style="flex: 1; display: flex; justify-content: center; align-items: center;">
@@ -177,9 +115,10 @@
       </div>
     </div>
 
-    <div class="col-span-2" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-        <div style="padding-right:20px;">
-            <label class="text-xl">We have huge pool of internal highly technical resources that can supplement your team and boost your development cycle.</label>
+    <div class="col-span-2">
+        <div style="padding-right:20px; margin-top:20px;">
+            <label class="text-xl">
+                We have huge pool of internal highly technical resources that can supplement your team and boost your development cycle.</label>
             <ul style="padding-top:20px; list-style:circle;"><label>We offer:</label>
                 <li>Staff augmentation</li>
                 <li>Contract to hire</li>
