@@ -12,68 +12,13 @@
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #ffffff;
-            color: white;
-            padding: 1rem;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .nav-links li {
-            margin-left: 20px;
-        }
-        .nav-links a {
-            color: black;
-            text-decoration: none;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background-color: white;
-            margin: 2px 0;
-        }
         .header-image {
             width: 100%;
-            height: 300px;
-            background-color: #f4f4f4;
-            display: flex;
+            height: 400px;
+            background-size: cover;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
-            background: linear-gradient(to left, #ffffff, #e2ede1);
-        }
-        .header-image::before {
-            content: '';
-            position: absolute;
-            top: 40%;  /* Position the first line */
-            left: 70%;
-            right: 0;
-            height: 2px;  /* Thickness of the line */
-            background: black;  /* Color of the line */
-            box-shadow:
-                0 20px 0 0 black, /* Second line */
-                0 40px 0 0 black, /* Third line */
-                0 60px 0 0 black, /* Fourth line */
-                0 80px 0 0 black, /* Fifth line */
-                0 100px 0 0 black; /* Sixth line */
+            background: url('/assets/images/office.png');
         }
         .main-div {
             padding: 2rem;
@@ -106,27 +51,6 @@
             text-align: center;
             padding: 1rem;
             margin-top: 2rem;
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                background-color: #35424a;
-                padding: 1rem;
-            }
-            .nav-links.show {
-                display: flex;
-            }
-            .nav-links li {
-                margin: 0.5rem 0;
-            }
-            .hamburger {
-                display: flex;
-            }
         }
     </style>
 </head>
